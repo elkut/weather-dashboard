@@ -1,10 +1,103 @@
 .App {
-  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+#light {
+  background-color: #add8e6;
+}
+
+#dark {
+  background-color: #282c34;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+#light .SearchBar {
+  background-color: #fff;
+}
+
+#dark .SearchBar {
+  background-color: #282c34;
+}
+
+.SearchBar input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  flex-grow: 1;
+}
+
+#dark .SearchBar input[type="text"] {
+  background-color: #dcdcdc;
+}
+
+.SearchBar button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+#dark .SearchBar button {
+  background-color: #778899;
+}
+
+#light .SearchBar button {
+  background-color: #008b8b;
+}
+
+.switch {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch lable {
+  margin: 10px;
+}
+
+#light .switch lable {
+  color: black;
+}
+
+#dark .switch lable {
+  color: white;
+}
+
+.CurrentWeatherCard {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#dark .CurrentWeatherCard {
+  background-color: #778899;
+  color: white;
+}
+
+#light .CurrentWeatherCard {
+  background-color: #f0f8ff;
+  color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
